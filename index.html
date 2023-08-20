@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Summer Sale</title>
+
+    <!-- work sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-worksans {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              xsm: "450px",
+              lgtab: "900px",
+            },
+            colors: {
+              primary: "#E527B2",
+              textPrimary: "#111",
+              headerBg: "#F9F6E2",
+              bodyBg: "#F8F8F8",
+            },
+            borderRadius: {
+              default: "8px",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-worksans bg-bodyBg text-textPrimary">
+    <header class="bg-headerBg py-[5.1875rem]">
+      <!-- banner section -->
+      <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
+        <section
+          class="grid grid-cols-1 md:gap-x-[1.8125rem] lgtab:grid-cols-2 items-center"
+        >
+          <!-- text part of banner section -->
+          <div class="text-center">
+            <h2
+              class="uppercase text-[1.3rem] lg:text-[2rem] mb-[1.25rem] lg:mb-[2.8125rem] font-medium"
+            >
+              ---sale fever---
+            </h2>
+
+            <div
+              class="lgtab:hidden xsm:w-[70%] sm:w-[50%] mx-auto mb-[1.35rem]"
+            >
+              <img
+                class="w-full block"
+                src="./assets/images/banner.webp"
+                alt="banner"
+              />
+            </div>
+
+            <h1
+              class="font-bold text-[2.5rem] lg:text-[3.625rem] mb-[2rem] md:mb-[1.5rem] lg:mb-[4.1875rem] leading-[normal]"
+            >
+              Purchase TK 200 or
+              <br class="hidden xsm:inline-block" />
+              above & get <span class="text-primary">20% off</span>
+            </h1>
+
+            <!-- coupon code -->
+            <div class="flex flex-col justify-center items-center gap-4">
+              <p class="text-xl lg:text-2xl font-medium">Use Promo Code</p>
+
+              <!-- primary button -->
+              <button
+                class="bg-primary py-[0.875rem] px-[1.5625rem] rounded-default font-semibold text-white text-xl lg:text-2xl"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+
+          <!-- image part of banner section -->
+          <div>
+            <img
+              class="hidden w-full lgtab:block"
+              src="./assets/images/banner.webp"
+              alt="banner"
+            />
+          </div>
+        </section>
+      </div>
+    </header>
+
     <script src="./js/utilities.js"></script>
   </body>
 </html>
