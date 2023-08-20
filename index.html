@@ -45,16 +45,16 @@
     </script>
   </head>
   <body class="font-worksans bg-bodyBg text-textPrimary">
-    <header class="bg-headerBg py-[5.1875rem]">
+    <header class="bg-headerBg">
       <!-- banner section -->
       <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
         <section
-          class="grid grid-cols-1 md:gap-x-[1.8125rem] lgtab:grid-cols-2 items-center"
+          class="grid grid-cols-1 md:gap-x-[1.8125rem] lgtab:grid-cols-2 items-center py-[5.1875rem]"
         >
           <!-- text part of banner section -->
           <div class="text-center">
             <h2
-              class="uppercase text-[1.3rem] lg:text-[2rem] mb-[1.25rem] lg:mb-[2.8125rem] font-medium"
+              class="uppercase text-[1.3rem] xl:text-[2rem] mb-[1.25rem] xl:mb-[2.8125rem] font-medium"
             >
               ---sale fever---
             </h2>
@@ -70,7 +70,7 @@
             </div>
 
             <h1
-              class="font-bold text-[2.5rem] lg:text-[3.625rem] mb-[2rem] md:mb-[1.5rem] lg:mb-[4.1875rem] leading-[normal]"
+              class="font-bold text-[2.5rem] xl:text-[3.625rem] mb-[2rem] md:mb-[1.5rem] xl:mb-[4.1875rem] leading-[normal]"
             >
               Purchase TK 200 or
               <br class="hidden xsm:inline-block" />
@@ -78,12 +78,14 @@
             </h1>
 
             <!-- coupon code -->
-            <div class="flex flex-col justify-center items-center gap-4">
-              <p class="text-xl lg:text-2xl font-medium">Use Promo Code</p>
+            <div
+              class="flex flex-col xl:flex-row justify-center items-center gap-4"
+            >
+              <p class="text-xl xl:text-2xl font-medium">Use Promo Code</p>
 
               <!-- primary button -->
               <button
-                class="bg-primary py-[0.875rem] px-[1.5625rem] rounded-default font-semibold text-white text-xl lg:text-2xl"
+                class="bg-primary py-[0.875rem] px-[1.5625rem] rounded-default font-semibold text-white text-xl xl:text-2xl"
               >
                 SELL200
               </button>
@@ -91,9 +93,9 @@
           </div>
 
           <!-- image part of banner section -->
-          <div>
+          <div class="hidden lgtab:block w-[80%] mx-auto xl:w-full">
             <img
-              class="hidden w-full lgtab:block"
+              class="w-full"
               src="./assets/images/banner.webp"
               alt="banner"
             />
@@ -101,6 +103,12 @@
         </section>
       </div>
     </header>
+
+    <main>
+      <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
+        <section></section>
+      </div>
+    </main>
 
     <script src="./js/utilities.js"></script>
   </body>
