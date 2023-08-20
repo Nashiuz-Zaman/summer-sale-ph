@@ -40,11 +40,13 @@
             },
             colors: {
               primary: "#E527B2",
+              primaryLight: "#EA52C1",
               textPrimary: "#111",
               textLight: "#11111180",
               headerBg: "#F9F6E2",
               bodyBg: "#F8F8F8",
               rating: "#FFC107",
+              borderLight: "#11111126",
             },
             borderRadius: {
               default: "8px",
@@ -121,22 +123,28 @@
       <!-- container start -->
       <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
         <div
-          class="grid grid-cols-1 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_1fr]"
+          class="grid grid-cols-1 md:grid-cols-[2fr_1fr] lg:!grid-cols-[3fr_1fr] gap-6"
         >
           <!-- product section start -->
           <section class="space-y-14">
             <!-- product row 1 -->
             <div>
-              <h3 class="font-semibold text-[2.5rem] mb-8">Kitchenware</h3>
+              <h3 class="font-semibold text-[2.5rem] mb-8 leading-[normal]">
+                Kitchenware
+              </h3>
               <!-- products container 1 -->
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
               >
                 <!-- product card 1 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod1.webp"
                       alt="product"
                     />
@@ -192,10 +200,14 @@
                 </div>
 
                 <!-- product card 2-->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod2.webp"
                       alt="product"
                     />
@@ -250,10 +262,14 @@
                 </div>
 
                 <!-- product card 3 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod3.webp"
                       alt="product"
                     />
@@ -303,18 +319,25 @@
                 </div>
               </div>
             </div>
+
             <!-- product row 2-->
             <div>
-              <h3 class="font-semibold text-[2.5rem] mb-8">Sportswear</h3>
+              <h3 class="font-semibold text-[2.5rem] mb-8 leading-[normal]">
+                Sportswear
+              </h3>
               <!-- products container 2 -->
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
               >
                 <!-- product card 4 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod4.webp"
                       alt="product"
                     />
@@ -370,10 +393,14 @@
                 </div>
 
                 <!-- product card 5 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod5.webp"
                       alt="product"
                     />
@@ -424,10 +451,14 @@
                 </div>
 
                 <!-- product card 6 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
+                      class="block"
                       src="./assets/images/prod6.webp"
                       alt="product"
                     />
@@ -435,6 +466,7 @@
 
                   <!-- rating -->
                   <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input type="radio" name="rating-6" class="rating-hidden" />
                     <input
                       type="radio"
                       name="rating-6"
@@ -480,17 +512,23 @@
 
             <!-- product row 3 -->
             <div>
-              <h3 class="font-semibold text-[2.5rem] mb-8">Sportswear</h3>
+              <h3 class="font-semibold text-[2.5rem] mb-8 leading-[normal]">
+                Furniture
+              </h3>
               <!-- products container 3 -->
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
               >
-                <!-- product card 4 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <!-- product card 7 -->
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
-                      src="./assets/images/prod4.webp"
+                      class="block"
+                      src="./assets/images/prod7.webp"
                       alt="product"
                     />
                   </div>
@@ -499,34 +537,34 @@
                   <div class="rating flex gap-[2px] justify-center mb-2">
                     <input
                       type="radio"
-                      name="rating-4"
+                      name="rating-7"
                       class="rating-hidden"
                       checked
                     />
                     <input
                       type="radio"
-                      name="rating-4"
+                      name="rating-7"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-4"
+                      name="rating-7"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-7"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-7"
                       class="mask mask-star-2 bg-rating"
                       checked
                     />
                     <input
                       type="radio"
-                      name="rating-4"
-                      class="mask mask-star-2 bg-rating"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-4"
-                      class="mask mask-star-2 bg-rating"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-4"
+                      name="rating-7"
                       class="mask mask-star-2 bg-rating"
                     />
                   </div>
@@ -534,120 +572,129 @@
                   <h4
                     class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
                   >
-                    Sports Back Cap
+                    Single Relax Chair
                   </h4>
                   <!-- product price -->
                   <p
                     class="text-textLight text-center text-xl leading-[normal]"
                   >
-                    <span class="product-price">49.00</span> TK
+                    <span class="product-price">185.00</span> TK
                   </p>
                 </div>
 
-                <!-- product card 5 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <!-- product card 8 -->
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
-                      src="./assets/images/prod5.webp"
+                      class="block"
+                      src="./assets/images/prod8.webp"
                       alt="product"
                     />
                   </div>
 
                   <!-- rating -->
                   <div class="rating flex gap-[2px] justify-center mb-2">
-                    <input type="radio" name="rating-5" class="rating-hidden" />
+                    <input type="radio" name="rating-8" class="rating-hidden" />
                     <input
                       type="radio"
-                      name="rating-5"
+                      name="rating-8"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-5"
+                      name="rating-8"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-5"
+                      name="rating-8"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-5"
+                      name="rating-8"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-8"
                       class="mask mask-star-2 bg-rating"
                       checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-5"
-                      class="mask mask-star-2 bg-rating"
                     />
                   </div>
                   <!-- product name -->
                   <h4
                     class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
                   >
-                    Full Jersey Set
+                    Children play
                   </h4>
                   <!-- product price -->
                   <p
                     class="text-textLight text-center text-xl leading-[normal]"
                   >
-                    <span class="product-price">69.00</span> TK
+                    <span class="product-price">299.00</span> TK
                   </p>
                 </div>
 
-                <!-- product card 6 -->
-                <div class="bg-white p-5 rounded-default product">
-                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                <!-- product card 9 -->
+                <div
+                  class="bg-white p-5 rounded-default product cursor-pointer"
+                >
+                  <div
+                    class="bg-bodyBg h-[12.5rem] flex justify-center items-center mb-[1.375rem] rounded-default"
+                  >
                     <img
-                      class="block mx-auto"
-                      src="./assets/images/prod6.webp"
+                      class="block"
+                      src="./assets/images/prod9.webp"
                       alt="product"
                     />
                   </div>
 
                   <!-- rating -->
                   <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input type="radio" name="rating-9" class="rating-hidden" />
                     <input
                       type="radio"
-                      name="rating-6"
+                      name="rating-9"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-6"
+                      name="rating-9"
                       class="mask mask-star-2 bg-rating"
                     />
                     <input
                       type="radio"
-                      name="rating-6"
+                      name="rating-9"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-9"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-9"
                       class="mask mask-star-2 bg-rating"
                       checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-6"
-                      class="mask mask-star-2 bg-rating"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-6"
-                      class="mask mask-star-2 bg-rating"
                     />
                   </div>
                   <!-- product name -->
                   <h4
                     class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
                   >
-                    Sports cates
+                    Flexible Sofa
                   </h4>
                   <!-- product price -->
                   <p
                     class="text-textLight text-center text-xl leading-[normal]"
                   >
-                    <span class="product-price">159.00</span> TK
+                    <span class="product-price">339.00</span> TK
                   </p>
                 </div>
               </div>
@@ -656,7 +703,77 @@
           <!-- product section end -->
 
           <!-- cart section start-->
-          <section></section>
+          <section class="pt-[4.9375rem] max-w-[21.375rem] w-full">
+            <!-- coupon part -->
+            <div class="bg-white p-6 w-full mb-6">
+              <p class="text-2xl font-medium leading-[normal] mb-4">
+                Have coupon?
+              </p>
+
+              <div
+                class="flex border border-borderLight overflow-hidden rounded-default"
+              >
+                <input
+                  id="coupon-input-field"
+                  type="text"
+                  placeholder="Coupon code"
+                  class="text-xl p-4 leading-[normal] w-[60%] focus:!outline-none"
+                  disabled
+                />
+
+                <!-- primary button -->
+                <button
+                  id="coupon-apply-button"
+                  class="w-[40%] block bg-primary hover:bg-primaryLight py-4 px-[1.5625rem] font-semibold text-white text-xl transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-primary"
+                  disabled
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+
+            <!-- product list part -->
+            <div class="bg-white p-6 !pb-0">
+              <ul
+                id="cart-items"
+                class="mb-[0.625rem] leading-[3rem] text-2xl font-medium"
+              >
+                <p
+                  id="empty-cart-message"
+                  class="text-center text-gray-400 leading-[inherit]"
+                >
+                  Cart is empty
+                </p>
+              </ul>
+              <div class="h-[1px] bg-borderLight mb-[0.75rem]"></div>
+
+              <div
+                class="text-2xl text-textLight leading-[3rem] font-medium pb-6 border-b border-borderLight"
+              >
+                <p>
+                  <span class="text-textPrimary">Total price:</span>
+                  <span id="total-price">0.00</span>TK
+                </p>
+                <p>
+                  <span class="text-textPrimary">Discount:</span>
+                  <span id="discount">0.00</span>TK
+                </p>
+                <p>
+                  <span class="text-textPrimary">Total:</span>
+                  <span id="total-final">0.00</span>TK
+                </p>
+              </div>
+
+              <button
+                id="purchase-button"
+                class="block w-full rounded-default relative translate-y-[40%] bg-primary hover:bg-primaryLight py-4 px-[1.5625rem] font-semibold text-white text-xl transition-all duration-300 disabled:hover:bg-primary disabled:opacity-30 disabled:cursor-not-allowed"
+                disabled
+              >
+                Make Purchase
+              </button>
+            </div>
+          </section>
+          <!-- cart section end-->
         </div>
       </div>
       <!-- container end -->
