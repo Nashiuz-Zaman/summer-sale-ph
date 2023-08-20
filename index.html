@@ -13,7 +13,12 @@
       rel="stylesheet"
     />
 
-    <!-- tailwind cdn -->
+    <!-- tailwind and daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -30,11 +35,16 @@
               xsm: "450px",
               lgtab: "900px",
             },
+            spacing: {
+              sectionGap: "7.5rem",
+            },
             colors: {
               primary: "#E527B2",
               textPrimary: "#111",
+              textLight: "#11111180",
               headerBg: "#F9F6E2",
               bodyBg: "#F8F8F8",
+              rating: "#FFC107",
             },
             borderRadius: {
               default: "8px",
@@ -45,9 +55,10 @@
     </script>
   </head>
   <body class="font-worksans bg-bodyBg text-textPrimary">
-    <header class="bg-headerBg">
-      <!-- banner section -->
+    <header class="bg-headerBg mb-sectionGap">
+      <!-- container start -->
       <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
+        <!-- banner section start -->
         <section
           class="grid grid-cols-1 md:gap-x-[1.8125rem] lgtab:grid-cols-2 items-center py-[5.1875rem]"
         >
@@ -101,13 +112,554 @@
             />
           </div>
         </section>
+        <!-- banner section end -->
       </div>
+      <!-- container end -->
     </header>
 
-    <main>
+    <main class="pb-[13rem]">
+      <!-- container start -->
       <div class="px-[1.5rem] 2xl:max-w-[90rem] mx-auto">
-        <section></section>
+        <div
+          class="grid grid-cols-1 md:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_1fr]"
+        >
+          <!-- product section start -->
+          <section class="space-y-14">
+            <!-- product row 1 -->
+            <div>
+              <h3 class="font-semibold text-[2.5rem] mb-8">Kitchenware</h3>
+              <!-- products container 1 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
+              >
+                <!-- product card 1 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod1.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="rating-hidden"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    K. Accessories
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">39.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 2-->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod2.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="rating-hidden"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    K. Accessories
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">25.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 3 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod3.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Home Cooker
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">49.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- product row 2-->
+            <div>
+              <h3 class="font-semibold text-[2.5rem] mb-8">Sportswear</h3>
+              <!-- products container 2 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
+              >
+                <!-- product card 4 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod4.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="rating-hidden"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Sports Back Cap
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">49.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 5 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod5.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input type="radio" name="rating-5" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Full Jersey Set
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">69.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 6 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod6.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Sports cates
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">159.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- product row 3 -->
+            <div>
+              <h3 class="font-semibold text-[2.5rem] mb-8">Sportswear</h3>
+              <!-- products container 3 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 products-container"
+              >
+                <!-- product card 4 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod4.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="rating-hidden"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Sports Back Cap
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">49.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 5 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod5.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input type="radio" name="rating-5" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Full Jersey Set
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">69.00</span> TK
+                  </p>
+                </div>
+
+                <!-- product card 6 -->
+                <div class="bg-white p-5 rounded-default product">
+                  <div class="bg-bodyBg p-8 mb-[1.375rem] rounded-default">
+                    <img
+                      class="block mx-auto"
+                      src="./assets/images/prod6.webp"
+                      alt="product"
+                    />
+                  </div>
+
+                  <!-- rating -->
+                  <div class="rating flex gap-[2px] justify-center mb-2">
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-6"
+                      class="mask mask-star-2 bg-rating"
+                    />
+                  </div>
+                  <!-- product name -->
+                  <h4
+                    class="font-semibold text-xl text-center mb-2 leading-[normal] product-name"
+                  >
+                    Sports cates
+                  </h4>
+                  <!-- product price -->
+                  <p
+                    class="text-textLight text-center text-xl leading-[normal]"
+                  >
+                    <span class="product-price">159.00</span> TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- product section end -->
+
+          <!-- cart section start-->
+          <section></section>
+        </div>
       </div>
+      <!-- container end -->
     </main>
 
     <script src="./js/utilities.js"></script>
