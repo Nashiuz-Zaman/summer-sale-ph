@@ -47,6 +47,7 @@
               bodyBg: "#F8F8F8",
               rating: "#FFC107",
               borderLight: "#11111126",
+              backdrop: "#0000004D",
             },
             borderRadius: {
               default: "8px",
@@ -777,8 +778,40 @@
         </div>
       </div>
       <!-- container end -->
+
+      <!-- backdrop -->
+      <div
+        id="backdrop"
+        class="fixed top-0 left-0 w-full h-full bg-backdrop opacity-0 invisible transition-all duration-500"
+      ></div>
+
+      <!-- modal -->
+      <div
+        id="modal"
+        class="fixed flex flex-col items-center max-w-[37.5rem] w-full py-[6.5rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white leading-[normal] rounded-[1rem] opacity-0 invisible transition-all duration-500"
+      >
+        <img
+          class="mb-10 block"
+          src="./assets/images/congo.webp"
+          alt="Success icon"
+        />
+
+        <h3 class="font-bold text-5xl mb-4">Congratulations</h3>
+        <p class="text-textLight text-xl mb-10">Your Purchase the product</p>
+
+        <button
+          id="go-home"
+          class="bg-primary text-white py-4 px-[2.8125rem] rounded-default font-semibold"
+        >
+          Go Home
+        </button>
+      </div>
     </main>
 
     <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/applyCoupon.js"></script>
+    <script src="./js/makePurchase.js"></script>
+    <script src="./js/goHome.js"></script>
   </body>
 </html>
