@@ -11,7 +11,7 @@ goHomeBtn.addEventListener("click", function () {
   cart.innerHTML = "";
   createEmptyCartMessage();
 
-  setElementInnerText("#total-price", 0);
-  setElementInnerText("#discount", 0);
-  setElementInnerText("#total-final", 0);
+  setElementInnerText("#total-price", "0.00");
+  setElementInnerText("#discount", "0.00");
+  setElementInnerText("#total-final", "0.00");
 });
